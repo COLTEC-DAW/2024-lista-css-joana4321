@@ -38,6 +38,7 @@ h1{
 h2{
     padding-top: 50px;
     font-size: 1.4rem;
+    text-indent: 1em;
 }
 h3{
     font-size: 1.2rem;
@@ -101,17 +102,18 @@ footer a:hover{
     }
 footer{
     display: flex;
-    justify-content: center;
     margin: 4%;
     padding-top: 20px;
     text-align: center;
     flex-wrap: wrap;
     
 }
-footer a{
+.main footer a{
     background-color: rgb(253, 133, 133);
     text-decoration: none;
     padding: 0.5em;
+    justify-content: center;
+    
     letter-spacing: 0.05em;
     color: rgb(59, 12, 12);
     border: 2px solid #5f1c14;
@@ -126,12 +128,7 @@ p{
         border-radius: 5px;
         background-color: rgb(255, 228, 196, 0.8);
         background-repeat: no-repeat;
-        background-position: top;
-        width: 30%;  
-        padding: 2%;
-        top: 605px;
-        left: 62%;
-        
+        background-position: top;        
 }
 .design-selection li{
     border-top: 1px solid #5f1c14;
@@ -144,18 +141,22 @@ p{
     li {
         display: block;margin:1em;}
     
-  }
+}
 .explanation{
     background-color: rgb(255, 228, 196, 0.8);
     width: 60%;
     margin-right: 35%;
-    border-right: 1px solid #1f295c;
+    border-right: 1px solid rgb(31, 41, 92);
     padding-right: 2%;
     border-style: double;
 }
-  
+
 #design-archives{
     display: none;
+    width: 30%;  
+    padding: 2%;
+    top: 605px;
+    left: 62%;   
 }
 #zen-preamble p{
     background-color: rgb(255, 228, 196, 0.8);
@@ -163,7 +164,7 @@ p{
 }
 .benefits{
     display: flex;
-    border-top: 1px solid #5f1c14;
+    border-bottom: 1px solid #5f1c14;
 }
 .benefits p{
     order: 1;
@@ -179,7 +180,7 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px solid #5f1c14;
+    border-top: 1px solid #5f1c14;
 }
 .participation h3{
     align-self: center;
