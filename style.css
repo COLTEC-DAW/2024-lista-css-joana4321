@@ -128,7 +128,11 @@ p{
         border-radius: 5px;
         background-color: rgb(255, 228, 196, 0.8);
         background-repeat: no-repeat;
-        background-position: top;        
+        background-position: top; 
+        width: 30%;  
+        padding: 2%;
+        top: 605px;
+        left: 62%;       
 }
 .design-selection li{
     border-top: 1px solid #5f1c14;
@@ -139,7 +143,9 @@ p{
 .sidebar{     
     text-align: center;
     li {
-        display: block;margin:1em;}
+        display: block;
+        margin:1em;
+    }
     
 }
 .explanation{
@@ -153,10 +159,10 @@ p{
 
 #design-archives{
     display: none;
-    width: 30%;  
+    /*width: 30%;  
     padding: 2%;
     top: 605px;
-    left: 62%;   
+    left: 62%; */  
 }
 #zen-preamble p{
     background-color: rgb(255, 228, 196, 0.8);
@@ -191,4 +197,48 @@ p{
 }
 .participation +.benefits{
     border-top:none;
+}
+
+@media screen and (max-width:786px){
+    .sidebar .design-selection{
+        position: unset;
+        border-radius: 5px;
+        background-repeat: unset;
+        background-position: unset; 
+        width: unset;  
+        padding: unset;
+        top: unset;
+        left: unset;         
+    }
+    .page-wrapper{
+        max-width: 90%;
+        min-width: unset;
+    }
+    .explanation{
+        border-right: unset;
+    }
+    .participation{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    header{
+        height: unset;
+    }
+    p{
+        text-indent: unset;
+    }
+}
+
+@media print{
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #9c291c;
+        color: #E6867C;
+    }
+    header{
+        color: #5f1c14;
+        background-color: bisque;
+        h1{color:#5f1c14;};
+        abbr{color: #eb9389;}
+    }
 }
